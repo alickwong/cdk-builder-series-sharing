@@ -1,0 +1,32 @@
+{
+  "name": "hit-counter",
+  "version": "0.1.0",
+  "bin": {
+    "hit-counter": "bin/hit-counter.js"
+  },
+  "scripts": {
+    "cdk_deploy_dev_hitcounter": "cdk deploy -c envname=ECSFargateStack3 --hotswap",
+    "cdk_synthesize": "cdk synthesize"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.3.2",
+    "@swc/jest": "^0.2.22",
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "aws-cdk": "2.38.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.172.0",
+    "@aws-sdk/client-lambda": "^3.171.0",
+    "@types/aws-lambda": "^8.10.104",
+    "aws-cdk-lib": "2.38.1",
+    "axios": "^0.27.2",
+    "cdk-dynamo-table-viewer": "^0.2.270",
+    "constructs": "^10.0.0"
+  }
+}
